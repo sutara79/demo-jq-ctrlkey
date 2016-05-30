@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ctrl+クリックを判別 (IE9+)</title>
+<script src="https://code.jquery.com/jquery-2.0.0.min.js" integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw=" crossorigin="anonymous"></script>
+<script>
+jQuery(document).ready(function ($) {
+  $(".button").click(function (event) {
+    if (event.ctrlKey) {
+      alert("アラート");
+    }
+  });
+});
+</script>
+</head>
+<body>
+<h1>Ctrl+クリックを判別 (IE9+)</h1>
+<p class="button">ボタン</p>
+</body>
+</html>
